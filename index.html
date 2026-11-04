@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0b15" />
+  <meta name="description" content="Conheça os jogos e vídeos de hallysz. Jogue BBB Simulator, O Último Grito e descubra o canal no YouTube." />
+  <meta property="og:title" content="hallysz — Meus links e projetos" />
+  <meta property="og:description" content="Um lugar para conhecer meus jogos, histórias e vídeos." />
+  <meta property="og:type" content="website" />
+  <title>hallysz — Meus links</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%239b7cff'/%3E%3Ctext x='50' y='69' font-family='Arial' font-size='64' font-weight='900' text-anchor='middle' fill='white'%3Eh%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {color-scheme: dark; --bg: #0d0b15; --surface:#191523; --border:#30283e; --text:#f7f3ff; --muted:#a89db8; --accent:#bb9bff; --accent2:#8461eb;}
+    * {box-sizing: border-box;}
+    html {scroll-behavior:smooth;}
+    body { margin:0; min-height:100vh; font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    body::before { content:""; position:fixed; z-index:-1; top:-220px; left:50%; transform:translateX(-50%); width:min(940px,160vw); height:690px; background:radial-gradient(ellipse at 50% 23%,rgba(116,72,186,.27), transparent 62%); pointer-events:none; }
+    body::after { content:""; position:fixed; z-index:-1; inset:0; opacity:.45; background-image:radial-gradient(#806e9a 0.6px, transparent 0.6px); background-size:30px 30px; mask-image:linear-gradient(to bottom,transparent,black 20%,transparent 85%); pointer-events:none; }
+    .page { width:min(100% - 36px, 560px); margin:0 auto; padding:48px 0 32px; }
+    .header { text-align:center; }
+    .avatar { display:grid; place-items:center; margin:0 auto 18px; width:84px; height:84px; border-radius:27px; background:linear-gradient(145deg, #d0b5ff 0%, #9369e7 55%, #5d37bf 100%); color:#201137; font-weight:900; font-size:48px; letter-spacing:-6px; padding-right:7px; box-shadow:0 0 0 6px rgba(154,114,237,.095),0 16px 46px rgba(85,42,165,.24); transform:rotate(-5deg); }
+    .avatar span { transform:rotate(5deg); }
+    .handle { margin:0; font-size:13px; font-weight:820; letter-spacing:3.4px; text-transform:uppercase; color:var(--accent); }
+    h1 { font-size:clamp(31px,7.4vw,43px); line-height:1.08; letter-spacing:-1.9px; margin:13px auto 12px; max-width:490px; font-weight:820; }
+    h1 em { font-style:normal; color:#c4a4ff; }
+    .subhead { color:#b9aec8; font-size:14.5px; line-height:1.7; max-width:340px; margin:0 auto; }
+    .separ { display:flex; align-items:center; gap:13px; margin:37px 0 17px; color:#bbadcf; font-size:10.5px; text-transform:uppercase; font-weight:800; letter-spacing:2.2px; }
+    .separ::before,.separ::after { content:""; height:1px; flex:1; background:linear-gradient(90deg,transparent,#443951); }
+    .separ::after { transform:rotate(180deg); }
+    .links {display:flex; flex-direction:column; gap:15px;}
+    a.project {text-decoration:none; color:inherit; display:block; border-radius:22px; padding:8px; background:linear-gradient(165deg,rgba(58,46,75,.95),rgba(29,23,39,.95)); border:1px solid #40354d; box-shadow:0 11px 28px rgba(0,0,0,.14); transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;}
+    a.project:hover {transform:translateY(-3px); border-color:#8a6eb7; box-shadow:0 20px 35px rgba(0,0,0,.22);}
+    a.project:focus-visible, a.secondary:focus-visible { outline:3px solid #cdb2ff; outline-offset:4px; }
+    .cover { height:122px; border-radius:16px; overflow:hidden; position:relative; display:flex; align-items:center; justify-content:center; isolation:isolate; }
+    .cover::before,.cover::after {position:absolute; content:""; pointer-events:none;}
+    .cover--youtube {background:radial-gradient(circle at 75% 60%,#5e1a2e 0,transparent 36%),linear-gradient(115deg,#231018,#491520 52%,#180d1a);}
+    .cover--youtube::before { width:240px; height:240px; right:-74px; top:-84px; border:1px solid rgba(255,121,139,.23); border-radius:50%; box-shadow:0 0 0 37px rgba(250,55,79,.035),0 0 0 80px rgba(250,55,79,.025); }
+    .cover--youtube::after {inset:0; background:linear-gradient(90deg,rgba(0,0,0,.07),transparent), repeating-linear-gradient(130deg,transparent 0 26px,rgba(255,255,255,.013) 27px 28px);}
+    .youtube-mark {position:relative; display:flex; align-items:center; gap:16px; z-index:1; margin-left:-6px;}
+    .yt-icon { width:76px; height:53px; border-radius:15px; background:#ff3851; display:grid; place-items:center; box-shadow:0 0 45px rgba(255,39,72,.36); }
+    .yt-icon svg {width:29px; height:29px; margin-left:4px;}
+    .brand-yt {font-size:27px; font-weight:900; line-height:1; letter-spacing:-1.25px; color:#fff; }
+    .brand-yt small {display:block; font-size:10px; font-weight:750; color:#ff9caa; letter-spacing:2.2px; margin-top:8px; text-transform:uppercase;}
+    .cover--bbb {background:radial-gradient(ellipse at 56% 60%,#7149d2 0%,#3a1e6c 39%,#191029 85%);}
+    .cover--bbb::before {width:290px; height:290px; border:1px solid rgba(216,197,255,.32); border-radius:50%; box-shadow:0 0 0 27px rgba(188,151,255,.07), 0 0 0 55px rgba(188,151,255,.047),0 0 0 86px rgba(188,151,255,.027); top:-85px; right:-17px;}
+    .cover--bbb::after {inset:0; background:linear-gradient(100deg,rgba(12,7,27,.55),transparent 65%); }
+    .bbb-mark {z-index:1; position:relative; text-align:left; width:76%; display:flex; align-items:center; gap:17px;}
+    .bbb-orb {display:grid; place-items:center; width:65px; height:65px; border-radius:21px; flex-shrink:0; background:linear-gradient(145deg,#d8c2ff,#8b5ae2); box-shadow:0 0 36px rgba(188,145,255,.42); transform:rotate(-8deg);}
+    .bbb-orb svg {width:38px; color:#3e1e72; transform:rotate(8deg);}
+    .bbb-typ {font-weight:950;font-size:34px;line-height:.94;letter-spacing:-2px;white-space:nowrap; color:#fff;text-shadow:0 4px 20px rgba(12,3,31,.4);}
+    .bbb-typ small {display:block;font-size:13px;letter-spacing:4px;color:#d3bcff;font-weight:850;margin-top:8px;}
+    .cover--terror {background:radial-gradient(ellipse at 80% 10%,#722432,transparent 46%),linear-gradient(105deg,#190d15 0%,#37121b 49%,#160b13 100%);}
+    .cover--terror::before {width:210px;height:220px;right:20px;top:-72px;border-radius:50%;background:radial-gradient(ellipse,rgba(220,62,79,.26),transparent 65%);filter:blur(5px);}
+    .cover--terror::after {inset:0;opacity:.4;background:repeating-linear-gradient(115deg,transparent 0 25px,rgba(255,152,152,.035) 25px 26px);}
+    .terror-mark {z-index:1;width:85%;display:flex;align-items:center;gap:16px;}
+    .slasher {height:68px;width:64px;flex-shrink:0;display:flex;gap:10px;align-items:center;justify-content:center;transform:rotate(13deg);}
+    .slasher i {width:9px;height:58px;background:linear-gradient(#ff8e94,#a30a25);clip-path:polygon(14% 0,100% 0,68% 100%,0 90%);box-shadow:0 0 15px rgba(237,61,80,.3);}
+    .slasher i:nth-child(2) {height:69px;}
+    .slasher i:nth-child(3) {height:52px;}
+    .terror-typ {font-size:27px;letter-spacing:1.25px;line-height:.98;font-weight:950;text-shadow:0 3px 18px #260000;}
+    .terror-typ small {display:block;margin-top:7px;font-size:10px;letter-spacing:3px;color:#f18f9f;}
+    .project-info {display:flex;align-items:center;gap:12px;padding:15px 11px 10px 12px;}
+    .project-copy {min-width:0; flex:1;}
+    .project-title {font-size:16px;line-height:1.25;font-weight:800;letter-spacing:-.3px;margin:0 0 5px;}
+    .project-desc {font-size:12px;line-height:1.45;color:#b6aac4;margin:0;}
+    .arrow {height:37px;width:37px;border-radius:12px;display:grid;place-items:center;background:#342841;color:#eadbff;flex-shrink:0; transition:transform .22s ease,background .22s ease;}
+    .arrow svg {width:17px;height:17px;}
+    a.project:hover .arrow {background:#62429c;transform:translate(2px,-2px);}
+    footer {text-align:center;margin-top:34px;padding:15px 0 2px;color:#8f839f;font-size:11px;line-height:1.8;}
+    footer strong {color:#d5bef9;}
+    .footer-bloom {font-size:18px;color:#8c6ac6;margin-bottom:9px;}
+    @media (min-width:700px) { .page {padding-top:66px;padding-bottom:48px;} .cover {height:144px;} .links{gap:17px;} }
+    @media (max-width:350px) {.page{width:calc(100% - 26px)}.bbb-typ{font-size:27px}.terror-typ{font-size:23px}.yt-icon{width:64px}.brand-yt{font-size:24px}.cover{height:113px;}}
+    @media (prefers-reduced-motion:reduce) {*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important;}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="avatar" aria-hidden="true"><span>h</span></div>
+      <p class="handle">@hallysz</p>
+      <h1>Entre no meu <em>universo.</em></h1>
+      <p class="subhead">Jogos, histórias e vídeos. Tudo que eu crio, em um só lugar. ✦</p>
+    </header>
+
+    <div class="separ" aria-hidden="true">Explore meus links</div>
+
+    <nav class="links" aria-label="Meus projetos e redes">
+      <a class="project" href="https://youtube.com/@hallysz?si=rWWRmfLLmCa60jsA" target="_blank" rel="noopener noreferrer" aria-label="Abrir meu canal no YouTube (nova aba)">
+        <div class="cover cover--youtube" aria-hidden="true">
+          <div class="youtube-mark">
+            <div class="yt-icon"><svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M7 4.5 20 12 7 19.5Z"/></svg></div>
+            <div class="brand-yt">YouTube<small>Meus vídeos</small></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-copy"><p class="project-title">Meu canal no YouTube</p><p class="project-desc">Vídeos, novidades e muito mais.</p></div>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 19 5M7 5h12v12"/></svg></span>
+        </div>
+      </a>
+
+      <a class="project" href="https://bbb-simulator.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Jogar BBB Simulator (nova aba)">
+        <div class="cover cover--bbb" aria-hidden="true">
+          <div class="bbb-mark">
+            <div class="bbb-orb"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><path d="M3 16s5.2-8 13-8 13 8 13 8-5.2 8-13 8S3 16 3 16Z"/><circle cx="16" cy="16" r="5"/><circle cx="16" cy="16" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+            <div class="bbb-typ">BBB<small>SIMULATOR</small></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-copy"><p class="project-title">BBB Simulator</p><p class="project-desc">Entre na casa, crie alianças e dispute o prêmio.</p></div>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 19 5M7 5h12v12"/></svg></span>
+        </div>
+      </a>
+
+      <a class="project" href="https://o-ultimo-grito.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Jogar O Último Grito (nova aba)">
+        <div class="cover cover--terror" aria-hidden="true">
+          <div class="terror-mark">
+            <div class="slasher"><i></i><i></i><i></i></div>
+            <div class="terror-typ">O ÚLTIMO<br>GRITO<small>SUA ESCOLHA. SEU FIM.</small></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-copy"><p class="project-title">O Último Grito</p><p class="project-desc">Uma história de terror onde suas escolhas importam.</p></div>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 19 5M7 5h12v12"/></svg></span>
+        </div>
+      </a>
+    </nav>
+
+    <footer>
+      <div class="footer-bloom" aria-hidden="true">✦</div>
+      Criado com imaginação por <strong>@hallysz</strong>.<br />© 2026 · Todos os links em um só lugar.
+    </footer>
+  </main>
+</body>
+</html>
